@@ -2,8 +2,6 @@ pipeline {
     agent any 
     environment {
         DOCKERHUB_CREDENTIALS=credentials('dockerhubaccount')
-        SONAR_ORGANIZATION_KEY = 'simplon-celiaouedraogo'
-        SONAR_TOKEN = credentials('sonarcloud')
     }
     stages {
         stage('Pré-Cleanup') {
